@@ -55,16 +55,6 @@ include_dir /etc/mosquitto/conf.d
 listener 1883
 ```
 
-# Beispielkonfiguration
-- Fügen Sie die folgenden Zeilen in die Konfigurationsdatei ein, um anonyme Verbindungen zu ermöglichen:
-```bash
-sudo nano /etc/mosquitto/mosquitto.conf
-```
-```bash
-listener 1883
-allow_anonymous true
-```
-
 ## Schritt 6:  Mosquitto neu starten
 ```bash
 sudo systemctl restart mosquitto
