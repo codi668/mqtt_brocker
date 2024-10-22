@@ -25,17 +25,13 @@ sudo apt install mosquitto mosquitto-clients
 sudo systemctl start mosquitto
 ```
 
-## Schritt 4: Mosquitto beim Booten aktivieren
-```bash
-sudo systemctl start mosquitto
-```
-## Schritt 5: Konfiguration
+## Schritt 4: Konfiguration
 - Die Standardkonfiguration von Mosquitto sollte für viele Anwendungen ausreichend sein. Sie können die Konfigurationsdatei jedoch anpassen, um spezifische Anforderungen zu erfüllen.
 ```bash
 sudo systemctl enable mosquitto
 ```
 
-## Schritt 6: Passwort(Optional)
+## Schritt 5: Passwort(Optional)
 - Erstelle eine Passwortdatei:
 ```bash
 sudo mosquitto_passwd -c /etc/mosquitto/passwd dein_benutzername
