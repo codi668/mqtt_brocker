@@ -36,11 +36,11 @@ sudo systemctl enable mosquitto
 ```bash
 sudo mosquitto_passwd -c /etc/mosquitto/passwd dein_benutzername
 ```
--Öffne die mosquitto.conf Datei:
+- Öffne die mosquitto.conf Datei:
 ```bash
 sudo nano /etc/mosquitto/mosquitto.conf
 ```
--füge folgendes ein:
+- füge folgendes ein:
 ```bash
 allow_anonymous false
 password_file /etc/mosquitto/passwd
