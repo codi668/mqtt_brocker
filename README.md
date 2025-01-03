@@ -64,6 +64,11 @@ sudo systemctl restart mosquitto
 mosquitto_pub -h localhost -t test/topic -m "Hello MQTT"
 ```
 
+## Schritt 8: Testen des MQTT Brokers
+```bash
+sudo systemctl status mosquitto
+```
+
 
 ```bash
 mosquitto_sub -h localhost -t test/topic
